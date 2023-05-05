@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zodiac</title>
+    <link rel="stylesheet" href="_CSS/style.css"/>
+    <link rel="icon" href="Assets/logo.png"/>
+
+</head>
+<body>
+
+    
+    
+    <main class="zodiaco">
+        <img class="zodiaco-logo" src="Assets/logo.png" alt="logo-site"/>
+
+        <h1 class="zodiaco-titulo">
+            Descubra seu <strong>signo</strong>
+        </h1>
+
+        <div class="dia-mes-ano">
+            <p>
+                Dia
+            </p>
+
+            <p>
+                Mês
+            </p>
+
+            <p>
+                Ano
+            </p>
+        </div>
+
+        <div class="zodiaco-data">
+
+            <input id="dia-input" class="button-date" type="number" min="1" max="31" value="1" />
+            
+            <p>
+            /
+            </p>
+            <input id="mes-input" class="button-date" type="number" min="1" max="12" value="1" />
+            
+            <p>
+            /
+            </p>
+            <input id="ano-input" class="button-date" type="number" min="1910" max="2077" value="2023" />
+        </div>
+        
+        <button id="ver-zodiaco" class="ver-zodiaco" onclick="gerarSigno()">
+            Gerar seu signo
+        </button>
+
+        <p id="error-data" class="error-data">
+            Data invalida, tente outra data
+        </p>
+
+    </main>
+
+
+
+<script src="_JS/script.js"></script>
+</body>
+</html>
